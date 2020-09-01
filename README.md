@@ -11,3 +11,12 @@ React JS Fundamentals Course(2020)
 
 ## State
 - state는 object이고 component의 data를 넣을 공간이 있고 **이 데이터는 변한다**.
+
+**state를 변경하지만 state는 동작하지 않는다?!!**
+> 리액트는 render function을 refresh하지 않기 때문이다.
+> 매번 state의 상태를 변경할 때 리액트가 render function을 호출해서 바꿔야한다.
+> setState를 호출하면 react는 state를 refresh하고 또한 render function을 호출한다.
+> setState를 사용하지 않으면 새 state와 함께 render function이 호출되지 않는다.
+
+**curren
+: state를 set할 때 react에서 외부의 상태에 의존하지 않는 가장 좋은 방법

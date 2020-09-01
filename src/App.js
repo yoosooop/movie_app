@@ -7,10 +7,14 @@ class App extends React.Component{
   }
   add = () => {
     console.log("add");
+    //this.setState({count : this.state.count + 1})
+    this.setState(current => ({count : current.count + 1}))
   };
   minus = () => {
     console.log("minus");
-  }
+    //this.setState({count : this.state.count - 1})
+    this.setState(current => ({count : current.count - 1}))
+  };
   render() {
      //즉시 호출되는 것이 아니라 click 했을 때만 function이 호출되길 원한다.
     return <div>
