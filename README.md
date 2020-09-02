@@ -55,7 +55,7 @@ React.Component 에서 사용하는 유일한 function은 render function이다.
 ## axios
 -> fetch 위에 있는 작은 layer
 - axios는 조금 느리기 때문에 javascript에게 componentDidMount 함수가 끝날 때까지 약간의 시간이 걸릴 수 있다고 말해야한다.
-    - 비동기 함수 이용 async 
+    - 비동기 함수 이용 async await
 
 //component는 HTML을 반환하는 함수이다.
 //react는 component를 사용해서 HTML처럼 작성하려는 경우에 필요하다.
@@ -65,4 +65,6 @@ React.Component 에서 사용하는 유일한 function은 render function이다.
 //react magic에서 react는 우리가 전달한 props를 가져가는 일을 한다.
 //부모 컴포넌트에서 자식 컴포넌트로 원하는 많은 props를 보낼 수 있다.
 //컴포넌트는 대문자로 시작
-//map은 array의 각 item에서 function을 실행하는 array를 가지는 js 함수이며 그 함수의 result를 갖는 array를 나에게 준다.
+//map은 array의 각 item에서 function을 실행하는 array를 가지는 js 
+//map으로 부터 뭔가를 return해야만 한다.
+함수이며 그 함수의 result를 갖는 array를 나에게 준다.
