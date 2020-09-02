@@ -51,6 +51,11 @@ React.Component 에서 사용하는 유일한 function은 render function이다.
 ### Unmounting
 "component가 죽는 것"(페이지 바뀔 때)
 
+---
+## axios
+-> fetch 위에 있는 작은 layer
+- axios는 조금 느리기 때문에 javascript에게 componentDidMount 함수가 끝날 때까지 약간의 시간이 걸릴 수 있다고 말해야한다.
+    - 비동기 함수 이용 async 
 
 //component는 HTML을 반환하는 함수이다.
 //react는 component를 사용해서 HTML처럼 작성하려는 경우에 필요하다.
