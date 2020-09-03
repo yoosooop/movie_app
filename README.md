@@ -3,6 +3,24 @@ React JS Fundamentals Course(2020)
 
 
 --- 
+## Component
+- component는 HTML을 반환하는 함수이다.
+- react는 component를 사용해서 HTML처럼 작성하려는 경우에 필요하다.
+- jsx : javascript 와 HTML 사이의 조합
+- component는 재사용 가능하다.
+
+- react magic에서 react는 우리가 전달한 props를 가져가는 일을 한다.
+- 부모 컴포넌트에서 자식 컴포넌트로 원하는 많은 props를 보낼 수 있다.
+- 컴포넌트는 대문자로 시작
+
+---
+## Map
+- map은 array의 각 item에서 function을 실행하는 array를 가지는 js 
+- map으로 부터 뭔가를 return해야만 한다.
+함수이며 그 함수의 result를 갖는 array를 나에게 준다.
+
+---
+
 ## Class component
 - class 컴포넌트는 return을 하지 않는다. 이것은 function이 아니기 때문이다.
 - function 컴포넌트는 함수이며 무언가를 return 한다. 그리고 화면에 나타남
@@ -57,14 +75,16 @@ React.Component 에서 사용하는 유일한 function은 render function이다.
 - axios는 조금 느리기 때문에 javascript에게 componentDidMount 함수가 끝날 때까지 약간의 시간이 걸릴 수 있다고 말해야한다.
     - 비동기 함수 이용 async await
 
-//component는 HTML을 반환하는 함수이다.
-//react는 component를 사용해서 HTML처럼 작성하려는 경우에 필요하다.
-//jsx : javascript 와 HTML 사이의 조합
-//component는 재사용 가능하다.
+---
+## gh-pages
+: 나의 웹사이트를 github의 github page 도메인에 나타나게 해준다.
+```
+https://{your github username}.github.io/{the name of your project in github}
+```
+- 프로젝트명 및 username 모두 소문자다.
+-> package.json 에 홈페이지를 추가하여 입력한다.
 
-//react magic에서 react는 우리가 전달한 props를 가져가는 일을 한다.
-//부모 컴포넌트에서 자식 컴포넌트로 원하는 많은 props를 보낼 수 있다.
-//컴포넌트는 대문자로 시작
-//map은 array의 각 item에서 function을 실행하는 array를 가지는 js 
-//map으로 부터 뭔가를 return해야만 한다.
-함수이며 그 함수의 result를 갖는 array를 나에게 준다.
+- deploy : build 폴더를 upload 한다.
+    - build 폴더를 얻는 방법은 npm run build를 실행시키는 것이다.
+    - npm run build를 실행하면 우리에게 build 폴더를 제공한다.
+- predeploy : deploy를 먼저 호출하기 전 자동적으로 실행된다.
