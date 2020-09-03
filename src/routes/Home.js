@@ -44,7 +44,7 @@ class Home extends React.Component{
     }
 }
 
-export default App;
+export default Home;
 
 /*
 class App extends React.Component{
