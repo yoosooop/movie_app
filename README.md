@@ -88,3 +88,10 @@ https://{your github username}.github.io/{the name of your project in github}
     - build 폴더를 얻는 방법은 npm run build를 실행시키는 것이다.
     - npm run build를 실행하면 우리에게 build 폴더를 제공한다.
 - predeploy : deploy를 먼저 호출하기 전 자동적으로 실행된다.
+---
+## Link
+: <a  href >가 리액트에서 실행시에 home 클릭시 전체 페이지가 새로고침 되버린다.
+-> import Link 를 이용한다.
+- Link를 사용하려면 Link는 라우터 안에 있어야 한다.
+  -> 페이지에 footer가 있다면 footer를 사용한다.
+  -> HashRouter를 사용하면 된다.
